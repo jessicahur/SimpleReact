@@ -16,7 +16,7 @@ Webpack can only runs my file if I change .jsx to .js in my webpack.config.js
 React.render is deprecated. What I did was install `react-dom` from npm, then call `import {render} from 'react-dom';` and then replace `React.render` by `render`:
 
 ```import React from 'react';
-import { render } from 'react-dom';
+   import { render } from 'react-dom';
 class Hello extends React.Component {
   render() {
     return (
