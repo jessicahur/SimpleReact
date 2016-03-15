@@ -17,7 +17,6 @@ React.render is deprecated. What I did was install `react-dom` from npm, then ca
 
 ```import React from 'react';
 import { render } from 'react-dom';
-
 class Hello extends React.Component {
   render() {
     return (
@@ -25,5 +24,4 @@ class Hello extends React.Component {
     );
   }
 }
-
 render(<Hello />, document.getElementById('root'));```
