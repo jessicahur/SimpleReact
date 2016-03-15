@@ -11,9 +11,12 @@
     }
 
 Webpack can only runs my file if I change .jsx to .js in my webpack.config.js
+
+Alternatively, changing App.js to App.jsx will run fine with the setting listed above, in opposed to naming it as App.js as the book seems to suggests.
+
 2. The book lists:
 `React.render(<Hello />, document.getElementById('root'));`
-React.render is deprecated. What I did was install `react-dom` from npm, then call `import {render} from 'react-dom';` and then replace `React.render` by `render`:
+React.render is _**deprecated**_. What I did was install `react-dom` from npm, then call `import {render} from 'react-dom';` and then replace `React.render` by `render`:
 
     import React from 'react';
     import { render } from 'react-dom';

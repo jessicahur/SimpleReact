@@ -1,6 +1,6 @@
 module.exports = {
   entry: [
-    './src/App.js'
+    './src/App.jsx'
   ],
   output: {
     path: __dirname,
@@ -8,7 +8,7 @@ module.exports = {
   },
   module: {
     loaders: [{
-        test: /\.js?$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: 'babel'
       // test: /\.jsx?$/,
