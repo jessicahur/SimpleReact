@@ -7,8 +7,7 @@
     test: /\.jsx?$/,
     loader: 'babel'
   }]
-}
-```
+}```
 Webpack can only runs my file if I change .jsx to .js in my webpack.config.js
 2. The book lists:
 `React.render(<Hello />, document.getElementById('root'));`
@@ -24,5 +23,4 @@ class Hello extends React.Component {
   }
 }
 
-render(<Hello />, document.getElementById('root'));
-```
+render(<Hello />, document.getElementById('root'));```
