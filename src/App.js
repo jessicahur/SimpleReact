@@ -1,4 +1,5 @@
 import React from 'react';
+import { render } from 'react-dom';
 
 class Hello extends React.Component {
   render() {
@@ -8,4 +9,4 @@ class Hello extends React.Component {
   }
 }
 
-React.render(<Hello />, document.getElementById('root'));
+render(<Hello />, document.getElementById('root'));
