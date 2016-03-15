@@ -8,8 +8,12 @@ module.exports = {
   },
   module: {
     loaders: [{
-      test: /\.jsx?$/,
-      loader: 'babel'
+        test: /\.js?$/,
+        exclude: /node_modules/,
+        loader: 'babel'
+      // test: /\.jsx?$/,
+      // exclude: /node_modules/,
+      // loader: 'babel'
     }]
   }
 };
