@@ -4,13 +4,20 @@
   "description": "server side for kanban client side",
   "main": "server.js",
   "scripts": {
-    "test": "gulp testing"
+    "test": "gulp testing",
+    "dev": "eval $(cat .env) nodemon server.js"
   },
   "author": "Jessica Hur",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.15.0",
     "express": "^4.13.4",
     "express-restify-mongoose": "^3.2.0",
-    "mongoose": "^4.4.10"
+    "mongoose": "^4.4.10",
+    "morgan": "^1.7.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "method-override": "^2.3.5"
   }
 }
