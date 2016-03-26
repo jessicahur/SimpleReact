@@ -1,7 +1,7 @@
 # SimpleReact
 (From **Pro React** by *Cassio de Sousa Antonio*)
 ## Notes for webpack.config.js
-0. While the book lists:
+a. While the book lists:
 
     module: {
       loaders: [{
@@ -12,9 +12,9 @@
 
 Webpack can only runs my file if I change .jsx to .js in my webpack.config.js
 
-Alternatively, changing App.js to App.jsx will run fine with the setting listed above, in opposed to naming it as App.js as the book seems to suggests.
+Alternatively, changing App.js to App.jsx will run fine with the setting listed above, in opposed to naming it App.js as the book suggests.
 
-1. The book lists:
+b. The book lists:
 `React.render(<Hello />, document.getElementById('root'));`
 React.render is _**deprecated**_. What I did was install `react-dom` from npm, then call `import {render} from 'react-dom';` and then replace `React.render` by `render`:
 
@@ -29,4 +29,4 @@ React.render is _**deprecated**_. What I did was install `react-dom` from npm, t
     }
     render(<Hello />, document.getElementById('root'));
 
-2. React does not deal with undefined type like Angular
+c. React does not deal with undefined type like Angular
