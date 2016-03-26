@@ -28,3 +28,5 @@ React.render is _**deprecated**_. What I did was install `react-dom` from npm, t
       }
     }
     render(<Hello />, document.getElementById('root'));
+
+3. React does not deal with undefined type like Angular

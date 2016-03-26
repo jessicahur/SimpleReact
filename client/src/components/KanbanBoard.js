@@ -10,6 +10,7 @@ class KanbanBoard extends Component {
           this.props.cards.filter(card => card.status === 'todo')
           } />
 
+
       </div>
     );
   }
